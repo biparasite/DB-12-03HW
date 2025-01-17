@@ -37,7 +37,9 @@ SELECT p.amount, p.payment_date FROM sakila.payment p WHERE p.amount > 10 AND CA
 ### Ответ
 
 ```SQL
-
+SELECT * FROM sakila.rental r ORDER BY r.rental_id DESC LIMIT 5;
 ```
+
+![rental](https://github.com/biparasite/DB-12-03HW/blob/main/rental.png)
 
 ---
