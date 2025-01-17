@@ -43,3 +43,28 @@ SELECT * FROM sakila.rental r ORDER BY r.rental_id DESC LIMIT 5;
 ![rental](https://github.com/biparasite/DB-12-03HW/blob/main/rental.png)
 
 ---
+
+## Задание 4
+
+Одним запросом получите активных покупателей, имена которых Kelly или Willie.
+
+Сформируйте вывод в результат таким образом:
+
+все буквы в фамилии и имени из верхнего регистра переведите в нижний регистр,
+замените буквы 'll' в именах на 'pp'.
+
+## Ответ
+
+```SQL
+SELECT
+    LOWER(first_name) AS first_name,
+    REPLACE(LOWER(first_name), 'll', 'pp') AS replaced_first_name
+FROM
+    customer
+WHERE
+    (first_name = 'Kelly' OR first_name = 'Willie');
+```
+
+![KellyWelly](https://github.com/biparasite/DB-12-03HW/blob/main/KellyWelly.png)
+
+---
