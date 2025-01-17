@@ -75,8 +75,8 @@ WHERE
 
 ```SQL
 SELECT c.email,
-	SUBSTRING_INDEX(c.email, '@', 1) AS username,
-	SUBSTRING_INDEX(c.email, '@', -1) AS domain_name
+    SUBSTRING_INDEX(c.email, '@', 1) AS username,
+    SUBSTRING_INDEX(c.email, '@', -1) AS domain_name
 FROM sakila.customer c;
 ```
 
