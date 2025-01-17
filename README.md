@@ -92,5 +92,5 @@ FROM sakila.customer c;
 ```
 
 <details><summary>SQL запрос</summary>
-![substring](https://github.com/biparasite/DB-12-03HW/blob/main/substring.png)
+(https://github.com/biparasite/DB-12-03HW/blob/main/substring.png)
 </details>
