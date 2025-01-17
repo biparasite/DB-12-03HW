@@ -68,3 +68,22 @@ WHERE
 ![KellyWelly](https://github.com/biparasite/DB-12-03HW/blob/main/KellyWelly.png)
 
 ---
+
+Дополнительные задания (со звёздочкой\*)
+
+Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
+
+## Задание 5\*
+
+Выведите Email каждого покупателя, разделив значение Email на две отдельных колонки: в первой колонке должно быть значение, указанное до @, во второй — значение, указанное после @.
+
+### Ответ
+
+```SQL
+SELECT c.email, 
+	SUBSTRING_INDEX(c.email, '@', 1) AS username,
+	SUBSTRING_INDEX(c.email, '@', -1) AS domain_name
+FROM sakila.customer c;
+```
+![substring](https://github.com/biparasite/DB-12-03HW/blob/main/substring.png)
+---
