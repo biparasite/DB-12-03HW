@@ -12,9 +12,7 @@
 SELECT DISTINCT district  FROM sakila.address WHERE district LIKE 'K%a' AND district NOT LIKE '% %';
 ```
 
-<details><summary>SQL запрос</summary>
 ![district](https://github.com/biparasite/DB-12-03HW/blob/main/district.png)
-</details>
 
 ---
 
@@ -28,10 +26,7 @@ SELECT DISTINCT district  FROM sakila.address WHERE district LIKE 'K%a' AND dist
 SELECT p.amount, p.payment_date FROM sakila.payment p WHERE p.amount > 10 AND CAST(p.payment_date AS DATE) BETWEEN '2005-06-15' AND '2005-06-18';
 ```
 
-<details><summary>SQL запрос</summary>
-![amount](https://github.com/biparasite/DB-12-03HW/blob/main/amount.png)
-</details>
----
+## ![amount](https://github.com/biparasite/DB-12-03HW/blob/main/amount.png)
 
 ## Задание 3
 
@@ -43,10 +38,7 @@ SELECT p.amount, p.payment_date FROM sakila.payment p WHERE p.amount > 10 AND CA
 SELECT * FROM sakila.rental r ORDER BY r.rental_id DESC LIMIT 5;
 ```
 
-<details><summary>SQL запрос</summary>
-![rental](https://github.com/biparasite/DB-12-03HW/blob/main/rental.png)
-</details>
----
+## ![rental](https://github.com/biparasite/DB-12-03HW/blob/main/rental.png)
 
 ## Задание 4
 
@@ -69,10 +61,7 @@ WHERE
     (first_name = 'Kelly' OR first_name = 'Willie');
 ```
 
-<details><summary>SQL запрос</summary>
-![KellyWelly](https://github.com/biparasite/DB-12-03HW/blob/main/KellyWelly.png)
-</details>
----
+## ![KellyWelly](https://github.com/biparasite/DB-12-03HW/blob/main/KellyWelly.png)
 
 Дополнительные задания (со звёздочкой\*)
 
@@ -91,6 +80,4 @@ SELECT c.email,
 FROM sakila.customer c;
 ```
 
-<details><summary>SQL запрос</summary>
-(https://github.com/biparasite/DB-12-03HW/blob/main/substring.png)
-</details>
+![substring](https://github.com/biparasite/DB-12-03HW/blob/main/substring.png)
